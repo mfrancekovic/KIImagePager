@@ -464,7 +464,7 @@
 -(void) imageWithUrl:(NSURL*)url completion:(KIImagePagerImageRequestBlock)completion
 {
     SDWebImageManager *manager = [SDWebImageManager sharedManager];
-    [manager downloadImageWithURL:imageURL
+    [manager downloadImageWithURL:url
                           options:0
                          progress:^(NSInteger receivedSize, NSInteger expectedSize) {
                              // progression tracking code
